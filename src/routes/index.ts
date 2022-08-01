@@ -1,9 +1,9 @@
 import { Router } from 'express'
 
-import UserController from '@controllers/UsersController'
+import FilmsController from '@controllers/FilmsController'
 
 const routes = Router()
 
-routes.get('/', UserController.index)
+routes.get('/', FilmsController.index)
 
 export default routes

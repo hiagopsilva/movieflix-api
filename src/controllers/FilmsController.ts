@@ -1,6 +1,6 @@
 // import { User } from '@models/User'
 
-class UsersController {
+class FilmsController {
   index (request, response) {
     // const user = new User()
 
@@ -8,4 +8,4 @@ class UsersController {
   }
 }
 
-export default new UsersController()
+export default new FilmsController()
