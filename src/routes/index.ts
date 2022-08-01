@@ -4,6 +4,6 @@ import FilmsController from '@controllers/FilmsController'
 
 const routes = Router()
 
-routes.get('/', FilmsController.index)
+routes.get('/', FilmsController.get)
 
 export default routes

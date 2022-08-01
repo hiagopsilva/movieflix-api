@@ -1,7 +1,10 @@
 import mongoose from 'mongoose'
 
 function connectionDatabase () {
-  mongoose.connect(process.env.URL_DB)
+  mongoose.connect(process.env.URL_DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
 
   const db = mongoose.connection
 

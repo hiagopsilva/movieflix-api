@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
+import './models/Films'
 
 import routes from '@routes/index'
 import connectionDatabase from '@database/connection'
