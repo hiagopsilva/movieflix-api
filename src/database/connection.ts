@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 function connectionDatabase () {
-  mongoose.connect(`mongodb+srv://${process.env.USER_DB}:${process.env.PASSWORD_DB}@cluster0.as2kx.mongodb.net/?retryWrites=true&w=majority`)
+  mongoose.connect(process.env.URL_DB)
 
   const db = mongoose.connection
 
