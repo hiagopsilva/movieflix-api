@@ -1,10 +1,12 @@
-// import { User } from '@models/User'
+/* eslint-disable no-unused-vars */
+import FilmsAPI from '@api/FilmsAPI'
+import { Response } from 'express'
 
 class FilmsController {
-  index (request, response) {
-    // const user = new User()
+  index = async (_: any, response: Response) => {
+    const dataFilms = await FilmsAPI.getFilms()
 
-    return response.json({ message: 'Welcome to Template Backend.   by: Hiago Prates @hiagopsilva' })
+    return response.json(dataFilms)
   }
 }
 
