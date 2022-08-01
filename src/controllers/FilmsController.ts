@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import FilmsAPI from '@api/FilmsAPI'
-import { Response } from 'express'
+import { Request, Response } from 'express'
 import mongoose from 'mongoose'
 
 const Films = mongoose.model('Films')
@@ -20,6 +20,14 @@ class FilmsController {
     }))
 
     return response.json(films)
+  }
+
+  list = async (request: Request, response: Response) => {
+    const { page = 1 } = request.query
+
+    const dataFilms = await Films.paginate({}, { page: page as number, limit: 10 })
+
+    return response.json(dataFilms)
   }
 }
 
