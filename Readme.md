@@ -21,6 +21,11 @@ Listagem de filmes.
 ### Banco de dados
 Banco de dados não relacional (noSQL) - MongoDB.
 
+### Link da API
+```
+https://hiagopsilva-movieflix-api.herokuapp.com
+```
+
 ### Endpoints
 - `('/')` Endpoint para consultar 50 filmes de uma API externa e salvar os dados no banco local.
 
