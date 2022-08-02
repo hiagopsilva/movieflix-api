@@ -9,7 +9,7 @@ class FilmsController {
   get = async (_: any, response: Response) => {
     const dataFilms = await FilmsAPI.getFilms()
 
-    const films = await Promise.all(dataFilms.map(async (item: any) => {
+    const films = await Promise.all(dataFilms.map(async (item: Film.Item) => {
       return await Films.create({
         title: item.title,
         description: item.description,
