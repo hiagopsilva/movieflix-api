@@ -13,7 +13,7 @@ class FilmsController {
       return await Films.create({
         title: item.title,
         description: item.description,
-        banner: item.banner,
+        banner: item.movie_banner,
         director: item.director,
         producer: item.producer
       })
