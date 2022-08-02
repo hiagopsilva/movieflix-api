@@ -41,18 +41,7 @@ cd movieflix-api
 
 Rode o comando `yarn` ou `npm install`
 
-Para rodar o projeto em modo de desenvolvimento:
+Para rodar o projeto, execute:
 ```
 yarn dev
 ```
-
-Para rodar o projeto em modo de homologação:
-```
-yarn hml
-```
-
-Para rodar o projeto em modo de produção:
-```
-yarn prd
-```
-
