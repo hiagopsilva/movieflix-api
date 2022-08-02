@@ -1,7 +1,8 @@
+<h1 align="center">
+<img style="text-align: center" width="91" alt="logo-2" src="https://user-images.githubusercontent.com/47197695/182469585-b81ea92f-5399-49b0-86ff-fa6672353925.png">
 
-# Projeto - MovieFlix API
-
-Listagem de filmes. 
+Projeto - MovieFlix API
+</h1>
 
 ### Informações do catálogo
 - Título
@@ -20,6 +21,11 @@ Listagem de filmes.
 
 ### Banco de dados
 Banco de dados não relacional (noSQL) - MongoDB.
+
+### Link da API
+```
+https://hiagopsilva-movieflix-api.herokuapp.com
+```
 
 ### Endpoints
 - `('/')` Endpoint para consultar 50 filmes de uma API externa e salvar os dados no banco local.
