@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import axios, { AxiosRequestConfig } from 'axios'
+import axios from 'axios'
 
 const request = axios.create({
   baseURL: 'https://ghibliapi.herokuapp.com',
